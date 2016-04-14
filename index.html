@@ -89,7 +89,7 @@
         <div class="panel panel-success">
             <div class="panel-heading">伺服器資訊</div>
             <div class="panel-body">
-                <h2><small class="col-xs-6">連線位置：<code>mc.oktw.tw</code></small><small class="col-xs-6">Minecraft版本：<code>1.8.x</code></small><br>
+                <h2><small class="col-xs-6">連線位置：<code>mc.oktw.tw</code></small><small class="col-xs-6">Minecraft版本：<code>1.8/1.9</code></small><br>
                 <small class="col-xs-6">線上人數：<code id="online" hidden></code></small><small class="col-xs-6">伺服器狀態：<code id="stats" hidden>online</code></small><br></h2>
             </div>
         </div>
@@ -103,9 +103,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
-        $.getJSON("https://mcapi.ca/query/mc.oktw.tw/info", function(data) {
+        $.getJSON("", function(data) {
             if (data.status) {
-                $("#online").text(data.players.online + "/" + data.players.max).show();
+                $("#online").text(data.players.online).show();
                 $("#stats").show();
             }
             else {
