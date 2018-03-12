@@ -27,11 +27,17 @@ $(document).ready(function() {
                 setTimeout(function(){ 
                     $('#title').removeClass('hinge animated');
                     $('#title').addClass('rubberBand animated');
-                    owo_title = true;
+                    setTimeout(function(){
+                        owo_title = true;
+                    },1500)
                 }, 2500); 
             }
             
         }
     )
+
+    cheet('f r o g', function () {
+        $("#frog").show();
+      });
     
 });
