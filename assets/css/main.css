@@ -5,13 +5,20 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+body {
+    -moz-user-select : none;
+    -webkit-user-select: none;
+}
+
 .title{
+    line-height: 1em;
     font-weight: 300;
-    font-size: 5em;
+    font-size: 4em;
     color: white;
 }
-body {-moz-user-select : none;-webkit-user-select: none;}
+
 .centerBox{
+    padding:2em;
     z-index: 1;
     width: auto; 
     height: 100%; 
@@ -42,6 +49,28 @@ body {-moz-user-select : none;-webkit-user-select: none;}
     z-index: 1;
 }
 
+.nextPageArrow{
+    z-index: 2;
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    left:49%;
+    bottom: 5%;
+    animation: down-arrow 1s infinite;
+}
+
+@keyframes down-arrow{
+    0%{
+        bottom:4.5%;
+    }
+    50%{
+        bottom:5%;
+    }
+    100%{
+        bottom:4.5%;
+    }
+
+}
 
 a { 
     text-align:center;

@@ -8,7 +8,6 @@ $(document).ready(function() {
 		slidesNavigation: true,
 		controlArrows: true,
 		verticalCentered: true,
-		verticalCentered: true,
 		easing: 'easeOutQuart',
 		easingcss3: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)'
     });     
