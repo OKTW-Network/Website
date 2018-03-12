@@ -1,3 +1,5 @@
+var owo_title = true;
+
 $(document).ready(function() {
 
     $('#fullpage').fullpage({
@@ -19,11 +21,16 @@ $(document).ready(function() {
 
     $('#title').hover(
         function(){ 
-            $('#title').addClass('hinge animated')
-            setTimeout(function(){ 
-                $('#title').removeClass('hinge animated');
-                $('#title').addClass('rubberBand animated');
-            }, 2500); 
+            if(owo_title){
+                owo_title = false;
+                $('#title').addClass('hinge animated')
+                setTimeout(function(){ 
+                    $('#title').removeClass('hinge animated');
+                    $('#title').addClass('rubberBand animated');
+                    owo_title = true;
+                }, 2500); 
+            }
+            
         }
     )
     
