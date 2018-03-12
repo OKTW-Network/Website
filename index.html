@@ -33,17 +33,11 @@
     <meta name="theme-color" content="#ffffff">
 
 
-    <!--Javascript-->
-
-    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="/assets/js/jquery.fullpage.min.js"></script>
-    <script src="/assets/js/main.js?v=20180312001"></script>
-
     <!--CSS-->
     
     <link rel="stylesheet" href="/assets/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="/assets/css/main.css?v=20180312001">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     
 </head>
 <body>
@@ -51,8 +45,15 @@
     <div id="fullpage">
         <div class="section">
 
-            <img class="backgroundBlur"/>
-
+            <div class="fullcontainer">
+                <img class="backgroundBlur"/>
+                <div class="centerBox">
+                    <h1 id="title" class="title rubberBand animated">
+                        OKTW Network
+                    </h1>
+                </div>
+            </div>
+            
         </div>
         <div class="section">
 
@@ -70,6 +71,12 @@
 
         </div>
     </div>
+
+    <!--Javascript-->
+
+    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="/assets/js/jquery.fullpage.min.js"></script>
+    <script src="/assets/js/main.js?v=20180312001"></script>
 
 </body>
 </html>

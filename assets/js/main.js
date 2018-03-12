@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     $('#fullpage').fullpage({
 		navigation : true,
 		navigationPosition : "right",
@@ -16,5 +16,15 @@ $(document).ready(function() {
 	for (let i = 0; i < tmp.length; i++) {
 		tmp[i].src = "/assets/bg/" + Math.floor(Math.random() * Math.floor(16 - 1) + 1) + ".jpg";
     }	 
+
+    $('#title').hover(
+        function(){ 
+            $('#title').addClass('hinge animated')
+            setTimeout(function(){ 
+                $('#title').removeClass('hinge animated');
+                $('#title').addClass('rubberBand animated');
+            }, 5000); 
+        }
+    )
     
 });
