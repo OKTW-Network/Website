@@ -1,0 +1,7 @@
+
+.backgroundBlur{
+    position: relative;
+    filter: blur(20px);
+    z-index: -10;
+    transform: scale(1.1); 
+}
