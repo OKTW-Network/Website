@@ -23,7 +23,7 @@ $(document).ready(function() {
             setTimeout(function(){ 
                 $('#title').removeClass('hinge animated');
                 $('#title').addClass('rubberBand animated');
-            }, 5000); 
+            }, 2500); 
         }
     )
     
