@@ -1,5 +1,10 @@
 var owo_title = true;
 
+function isMobile() {
+    try{ document.createEvent("TouchEvent"); return true; }
+    catch(e){ return false; }
+  }
+
 $(document).ready(function() {
 
     $('#fullpage').fullpage({
@@ -35,6 +40,20 @@ $(document).ready(function() {
             
         }
     )
+
+    $('.nextArrow').click(function(){
+        $.fn.fullpage.moveSlideLeft();
+    })
+
+    $('.prevArrow').click(function(){
+        $.fn.fullpage.moveSlideRight();
+    })
+
+    if(isMobile()){
+        $('.nextArrow').hide();
+        $('.prevArrow').hide();
+        $('#nextPageArrow').hide();
+    }
 
     cheet('f r o g', function () {
         $("#frog").show();

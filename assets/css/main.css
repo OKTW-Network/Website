@@ -22,6 +22,10 @@ body {
     background-color: white;
 }
 
+#arrow{
+    color:white
+}
+
 .title{
     line-height: 1em;
     font-weight: 300;
@@ -30,12 +34,15 @@ body {
 }
 
 .nextArrow{
+    color:white;
+    z-index: 2;
     position: absolute;
     top: 45%;
     left:10%;
 }
 
 .prevArrow{
+    z-index: 2;
     position: absolute;
     top: 45%;
     right:10%;
