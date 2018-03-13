@@ -6,8 +6,20 @@
 }
 
 body {
+    display: flex;
     -moz-user-select : none;
     -webkit-user-select: none;
+}
+
+.fp-slidesNav{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:80%;    
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background-color: white;
 }
 
 .title{
@@ -15,6 +27,18 @@ body {
     font-weight: 300;
     font-size: 4em;
     color: white;
+}
+
+.nextArrow{
+    position: absolute;
+    top: 45%;
+    left:10%;
+}
+
+.prevArrow{
+    position: absolute;
+    top: 45%;
+    right:10%;
 }
 
 .centerBox{
@@ -30,13 +54,13 @@ body {
 
 .backgroundBlur{
     position: absolute;
-    width: 100%;
+    object-fit: fill;
     height: 100%;
     top: 0;
     left: 0;
     filter: blur(20px);
     z-index: -10;
-    transform: scale(1.1); 
+    transform: scale(1.2); 
 }
 
 .fullcontainer{
@@ -51,11 +75,11 @@ body {
 
 .nextPageArrow{
     z-index: 2;
-    position: absolute;
-    font-size: 2em;
     color: white;
-    left:49%;
-    bottom: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8%;
     animation: down-arrow 1s infinite;
 }
 

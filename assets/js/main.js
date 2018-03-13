@@ -6,8 +6,9 @@ $(document).ready(function() {
 		navigation : true,
 		navigationPosition : "right",
 		slidesNavigation: true,
-		controlArrows: true,
-		verticalCentered: true,
+		controlArrows: false,
+        verticalCentered: true,
+        fitToSection: false,
 		easing: 'easeOutQuart',
 		easingcss3: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)'
     });     
@@ -28,7 +29,7 @@ $(document).ready(function() {
                     $('#title').addClass('rubberBand animated');
                     setTimeout(function(){
                         owo_title = true;
-                    },1500)
+                    },1000)
                 }, 2500); 
             }
             
