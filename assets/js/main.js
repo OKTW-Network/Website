@@ -80,9 +80,9 @@ function init(){
 
     $(".backgroundBlur").one("load", function() {
         setTimeout(function(){
-            $("#loading").css("transform","scale(20)");
+            $("#loading").css("transform","scale(5)");
             $("#loading").css("opacity","0");
-            $("#loading").css("filter","blur(10px)");
+            $("#loading").css("filter","blur(5px)");
             setTimeout(function(){
                 $("#loading").css("display","none");
             },1000)
