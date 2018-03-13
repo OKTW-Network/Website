@@ -1,12 +1,35 @@
 var owo_title = true;
 
+function generateContributors(){
+    var json_request = new XMLHttpRequest();
+    json_request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            jsonData = JSON.parse(this.responseText);
+            console.log(jsonData);
+            init();
+         }
+    };
+    json_request.open("GET", "assets/data.json", true);
+    json_request.send();
+}
+
+function generateContributorCard(key,data){
+
+}
+
 function isMobile() {
     try{ document.createEvent("TouchEvent"); return true; }
     catch(e){ return false; }
   }
 
 $(document).ready(function() {
+    
+    generateContributors();
+    
+});
 
+function init(){
+    
     $('#fullpage').fullpage({
 		navigation : true,
 		navigationPosition : "right",
@@ -55,8 +78,13 @@ $(document).ready(function() {
         $('#nextPageArrow').hide();
     }
 
+    $(".backgroundBlur").one("load", function() {
+        $("#loading").css("top","100%")
+      }).each(function() {
+        if(this.complete) $(this).load();
+      });
+
     cheet('f r o g', function () {
         $("#frog").show();
       });
-    
-});
+}
