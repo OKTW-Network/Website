@@ -37,6 +37,7 @@ function init(){
 		controlArrows: false,
         verticalCentered: true,
         fitToSection: false,
+        loopBottom: true,
 		easing: 'easeOutQuart',
 		easingcss3: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)'
     });     
