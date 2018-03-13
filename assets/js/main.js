@@ -79,10 +79,10 @@ function init(){
     }
 
     $(".backgroundBlur").one("load", function() {
-        $("#loading").css("top","100%")
-      }).each(function() {
+        $("#loading").css("transform","scale3d(0, 0, 0)");
+    }).each(function() {
         if(this.complete) $(this).load();
-      });
+    });
 
     cheet('f r o g', function () {
         $("#frog").show();
