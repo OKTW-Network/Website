@@ -79,7 +79,10 @@ function init(){
     }
 
     $(".backgroundBlur").one("load", function() {
-        $("#loading").css("transform","scale3d(0, 0, 0)");
+        setTimeout(function(){
+            $("#loading").css("transform","scale3d(0, 0, 0)");
+        },1000)
+        
     }).each(function() {
         if(this.complete) $(this).load();
     });
