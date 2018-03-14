@@ -2,12 +2,17 @@ var owo_title = true;
 var backgroundCount = 0;
 var backgroundloadedCount = 0;
 
-function generateContributors(){
+function isMobile() {
+    try{ document.createEvent("TouchEvent"); return true; }
+    catch(e){ return false; }
+}
+
+function getContributors(){
     var json_request = new XMLHttpRequest();
     json_request.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             jsonData = JSON.parse(this.responseText);
-            console.log(jsonData);
+            generateContributors(jsonData.contributors);
             init();
          }
     };
@@ -15,18 +20,85 @@ function generateContributors(){
     json_request.send();
 }
 
-function generateContributorCard(key,data){
+function generateContributors(json){
+    console.log("Generating Contributors")
+    i = 0;
+    var slide = document.createElement("div");
+    slide.className = "slide";
+    var container = document.createElement("div");
+    container.className = "centerBox";
+    Object.keys(json).forEach(function(key){
+        if(isMobile()){
+            if(i == 1){
+                slide.appendChild(container);
+                $("#contributors").append(slide);
+                slide = document.createElement("div")
+                slide.className = "slide";
+                container = document.createElement("div");
+                container.className = "centerBox";
+                i = 0;
+            }
+        }else{
+            if(i == 3){
+                slide.appendChild(container);
+                $("#contributors").append(slide);
+                slide = document.createElement("div")
+                slide.className = "slide";
+                container = document.createElement("div");
+                container.className = "centerBox";
+                i = 0;
+            }
+        }
+        i++;
+        window.loaded = true;
+        container.appendChild(generateContributorCard(json[key]));
+    });
+    if(i > 0){
+        slide.appendChild(container);
+        $("#contributors").append(slide);
+    }
+}
+
+function generateContributorCard(data){
+
+    var contributor = document.createElement("div");
+    contributor.className = "contributor"
+
+    var avatar = document.createElement("img");
+    avatar.className = "contributorAvatar";
+    if(data.avatar){
+        avatar.src = data.avatar;
+    }else{
+        avatar.src = "assets/img/default_avatar.png";
+    }
+    
+    var displayname = document.createElement("div");
+    displayname.className = "contributorDisplayname";
+    displayname.innerHTML = data.displayname;
+
+    var id = document.createElement("div");
+    id.className = "contributorID";
+    id.innerHTML = data.id;
+
+    var introduction = document.createElement("div");
+    introduction.className = "contributorIntroduction";
+    introduction.innerHTML = data.introduction;
+
+    contributor.appendChild(avatar);
+    contributor.innerHTML += "<br/>";
+    contributor.appendChild(displayname);
+    contributor.innerHTML += "<br/>";
+    contributor.appendChild(id);
+    contributor.innerHTML += "<br/>";
+    contributor.appendChild(introduction);
+    return(contributor)
 
 }
 
-function isMobile() {
-    try{ document.createEvent("TouchEvent"); return true; }
-    catch(e){ return false; }
-  }
 
 $(document).ready(function() {
     
-    generateContributors();
+    getContributors();
     
 });
 

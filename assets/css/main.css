@@ -26,6 +26,42 @@ body {
     color:white
 }
 
+.contributor{
+    margin:2em;
+    display: inline-block;
+}
+
+.contributorAvatar{
+    width: 10em;
+    border-radius: 50%;
+    
+}
+
+.contributorDisplayname{
+    color: white;
+    font-size:2em;
+    margin:0;
+    overflow: hidden; 
+    text-align: center;
+
+}
+
+.contributorID{
+    color: white;
+    margin-top:-1em;
+    font-size:0.8em;
+    overflow: hidden; 
+    text-align: center;
+
+}
+
+.contributorIntroduction{
+    color: white;
+    overflow: hidden; 
+    text-align: center;
+
+}
+
 .title{
     line-height: 1em;
     font-weight: 300;
