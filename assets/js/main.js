@@ -90,10 +90,13 @@ function init(){
                 $("#loading").css("transform","scale(1.5)");
                 $("#loading").css("opacity","0");
                 $("#loading").css("filter","blur(1px)");
+
+                $("#frog").attr("poster","https://media.giphy.com/media/pkYigxymEkV44/200_s.gif");
                 var source = document.createElement('source');
                 source.src = "https://media.giphy.com/media/pkYigxymEkV44/giphy.mp4";
                 source.type = "video/mp4";
                 $("#frog").append(source);
+                
                 setTimeout(function(){
                     $("#loading").css("display","none");
                 },1000)
