@@ -27,12 +27,14 @@ body {
 }
 
 .contributor{
+    width:15em;
     margin:2em;
     display: inline-block;
 }
 
 .contributorAvatar{
-    width: 10em;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
     
 }

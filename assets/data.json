@@ -1,51 +1,27 @@
 {"contributors":
     [
         {
-            "id" : "james58899",
-            "avatar" : "",
-            "displayname" : "james58899",
-            "introduction" : "是大大"
+            "id" : "@james58899",
+            "avatar" : "https://www.gravatar.com/avatar/8ec675a5b0fdd9237a8d4f5d27f38790?s=512",
+            "displayname" : "James",
+            "introduction" : "創始人兼插件開發兼伺服器維護<br>走 osu!"
         },
         {
-            "id" : "james58899",
-            "avatar" : "",
-            "displayname" : "james58899",
-            "introduction" : "是大大"
+            "id" : "@bill96012",
+            "avatar" : "assets/avatar/bill96012.gif",
+            "displayname" : "BL",
+            "introduction" : "材質建模<br>走 Warframe"
         },
         {
-            "id" : "james58899",
+            "id" : "@jimchen5209",
             "avatar" : "",
-            "displayname" : "james58899",
-            "introduction" : "是大大"
+            "displayname" : "jimchen伍仟兩佰零玖",
+            "introduction" : "插件開發<br>&nbsp"
         },
         {
-            "id" : "james58899",
-            "avatar" : "",
-            "displayname" : "james58899",
-            "introduction" : "是大大"
-        },
-        {
-            "id" : "james58899",
-            "avatar" : "",
-            "displayname" : "james58899",
-            "introduction" : "是大大"
-        },
-        {
-            "id" : "james58899",
-            "avatar" : "",
-            "displayname" : "james58899",
-            "introduction" : "是大大"
-        },
-        {
-            "id" : "james58899",
-            "avatar" : "",
-            "displayname" : "james58899",
-            "introduction" : "是大大"
-        },
-        {
-            "id" : "james58899",
-            "avatar" : "",
-            "displayname" : "james58899",
-            "introduction" : "是大大"
+            "id" : "@sciuridae0603",
+            "avatar" : "https://s.gravatar.com/avatar/60ce6b00bae88e0ff15c9480a9ce92f5?s=512",
+            "displayname" : "Sciuridae",
+            "introduction" : "網頁開發<br>走 osu! Warframe"
         }
     ]}
