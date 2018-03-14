@@ -85,19 +85,21 @@ function init(){
             $("#loading").css("transform","scale(1.5)");
             $("#loading").css("opacity","0");
             $("#loading").css("filter","blur(1px)");
+            
+            var source = document.createElement('source');
+            source.src = "https://media.giphy.com/media/pkYigxymEkV44/giphy.mp4";
+            source.type = "video/mp4";
+            $("#frog").append(source);
             setTimeout(function(){
                 $("#loading").css("display","none");
             },1000)
         },1000)
         
+        
     }).each(function() {
         if(this.complete) $(this).load();
     });
 
-    var source = document.createElement('source');
-    source.src = "https://media.giphy.com/media/pkYigxymEkV44/giphy.mp4";
-    source.type = "video/mp4";
-    $("#frog").append(source);
 
     cheet('f r o g', function () {
         $("#frog")[0].play()
