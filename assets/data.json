@@ -2,25 +2,37 @@
     [
         {
             "id" : "@james58899",
-            "avatar" : "https://www.gravatar.com/avatar/8ec675a5b0fdd9237a8d4f5d27f38790?s=512",
+            "avatar" : "//www.gravatar.com/avatar/8ec675a5b0fdd9237a8d4f5d27f38790?s=512",
             "displayname" : "James",
             "introduction" : "創始人兼插件開發兼伺服器維護<br>走 osu!"
         },
         {
             "id" : "@bill96012",
-            "avatar" : "assets/avatar/bill96012.gif",
+            "avatar" : "//www.gravatar.com/avatar/e4dcffdb308f56412b43569a9593f8ec?s=512",
             "displayname" : "BL",
             "introduction" : "材質建模<br>走 Warframe"
         },
         {
             "id" : "@jimchen5209",
-            "avatar" : "",
-            "displayname" : "jimchen伍仟兩佰零玖",
+            "avatar" : "//www.gravatar.com/avatar/537a70f67334c4d1dde928ceda1663ce?s=512",
+            "displayname" : "jimchen5209",
             "introduction" : "插件開發<br>&nbsp"
         },
         {
+            "id" : "@cute_panda",
+            "avatar" : "//www.gravatar.com/avatar/857bd3a15be7c2ba7dd9c5cee284678c?s=512",
+            "displayname" : "Panada",
+            "introduction" : "插件開發<br>&nbsp"
+        },
+        {
+            "id" : "@licson0729",
+            "avatar" : "//www.gravatar.com/avatar/fd38f5219d460c0d348a9a1d78256e65?s=512",
+            "displayname" : "Licson",
+            "introduction" : "贊助商大大<br>擁有100Gbps家用網路"
+        },
+        {
             "id" : "@sciuridae0603",
-            "avatar" : "https://s.gravatar.com/avatar/60ce6b00bae88e0ff15c9480a9ce92f5?s=512",
+            "avatar" : "//www.gravatar.com/avatar/60ce6b00bae88e0ff15c9480a9ce92f5?s=512",
             "displayname" : "Sciuridae",
             "introduction" : "網頁開發<br>走 osu! Warframe"
         }
