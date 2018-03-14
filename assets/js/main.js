@@ -38,6 +38,7 @@ function init(){
         verticalCentered: true,
         fitToSection: false,
         loopBottom: true,
+        lazyLoading: true,
 		easing: 'easeOutQuart',
 		easingcss3: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)'
     });     
@@ -81,9 +82,9 @@ function init(){
 
     $(".backgroundBlur").one("load", function() {
         setTimeout(function(){
-            $("#loading").css("transform","scale(5)");
+            $("#loading").css("transform","scale(1.5)");
             $("#loading").css("opacity","0");
-            $("#loading").css("filter","blur(5px)");
+            $("#loading").css("filter","blur(1px)");
             setTimeout(function(){
                 $("#loading").css("display","none");
             },1000)
@@ -93,7 +94,13 @@ function init(){
         if(this.complete) $(this).load();
     });
 
+    var source = document.createElement('source');
+    source.src = "https://media.giphy.com/media/pkYigxymEkV44/giphy.mp4";
+    source.type = "video/mp4";
+    $("#frog").append(source);
+
     cheet('f r o g', function () {
+        $("#frog")[0].play()
         $("#frog").show();
       });
 }
