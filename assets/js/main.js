@@ -171,7 +171,7 @@ function init(){
         
         
     }).each(function() {
-        if(this.complete) $(this).load();
+        try{if(this.complete) $(this).load();}catch(e){};
     });
 
 
