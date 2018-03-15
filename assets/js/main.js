@@ -168,6 +168,8 @@ function init(){
                 source.src = "https://media.giphy.com/media/pkYigxymEkV44/giphy.mp4";
                 source.type = "video/mp4";
                 $("#frog").append(source);
+
+                $("#thinking").attr("src","https://78.media.tumblr.com/6890fa77ef0c97f35fc5d3a73561bffe/tumblr_inline_p3x93xkibr1tam967_540.gif");
                 
                 setTimeout(function(){
                     $("#loading").css("display","none");
@@ -185,4 +187,8 @@ function init(){
         $("#frog")[0].play()
         $("#frog").show();
       });
+
+    cheet('t h i n k i n g', function () {
+        $("#thinking").show();
+    });
 }
