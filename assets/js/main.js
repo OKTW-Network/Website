@@ -105,7 +105,7 @@ $(document).ready(function() {
 function init(){
     
     $('#fullpage').fullpage({
-		fitToSection: true,
+		fitToSection: false,
 		autoScrolling: false,
 		navigation : true,
 		navigationPosition : "right",
