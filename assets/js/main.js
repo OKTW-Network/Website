@@ -105,12 +105,13 @@ $(document).ready(function() {
 function init(){
     
     $('#fullpage').fullpage({
+		fitToSection: true,
+		autoScrolling: false,
 		navigation : true,
 		navigationPosition : "right",
 		slidesNavigation: true,
 		controlArrows: false,
         verticalCentered: true,
-        fitToSection: false,
         loopBottom: true,
         lazyLoading: true,
 		easing: 'easeOutQuart',
