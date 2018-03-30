@@ -1,39 +1,39 @@
-{"contributors":
-    [
-        {
-            "id" : "@james58899",
-            "avatar" : "//www.gravatar.com/avatar/8ec675a5b0fdd9237a8d4f5d27f38790?s=512",
-            "displayname" : "James",
-            "introduction" : "創始人兼插件開發兼伺服器維護<br>走 osu!"
+{
+    "contributors": [{
+            "id": "@james58899",
+            "avatar": "//www.gravatar.com/avatar/8ec675a5b0fdd9237a8d4f5d27f38790?s=512",
+            "displayname": "James",
+            "introduction": "創始人兼插件開發兼伺服器維護<br>走 osu!"
         },
         {
-            "id" : "@bill96012",
-            "avatar" : "//www.gravatar.com/avatar/e4dcffdb308f56412b43569a9593f8ec?s=512",
-            "displayname" : "BL",
-            "introduction" : "材質建模<br>走 Warframe"
+            "id": "@bill96012",
+            "avatar": "//www.gravatar.com/avatar/e4dcffdb308f56412b43569a9593f8ec?s=512",
+            "displayname": "BL",
+            "introduction": "材質建模<br>走 Warframe"
         },
         {
-            "id" : "@jimchen5209",
-            "avatar" : "//www.gravatar.com/avatar/537a70f67334c4d1dde928ceda1663ce?s=512",
-            "displayname" : "Jim Chen😶",
-            "introduction" : "插件開發<br>&nbsp"
+            "id": "@jimchen5209",
+            "avatar": "//www.gravatar.com/avatar/537a70f67334c4d1dde928ceda1663ce?s=512",
+            "displayname": "Jim Chen😶",
+            "introduction": "插件開發<br>&nbsp"
         },
         {
-            "id" : "@cute_panda",
-            "avatar" : "//www.gravatar.com/avatar/857bd3a15be7c2ba7dd9c5cee284678c?s=512",
-            "displayname" : "Panada",
-            "introduction" : "其實我不知道那簡介要寫什麼阿<br>贊助了一條2G DDR3記憶體"
+            "id": "@cute_panda",
+            "avatar": "//www.gravatar.com/avatar/857bd3a15be7c2ba7dd9c5cee284678c?s=512",
+            "displayname": "Panada",
+            "introduction": "其實我不知道那簡介要寫什麼阿<br>贊助了一條2G DDR3記憶體"
         },
         {
-            "id" : "@licson0729",
-            "avatar" : "//www.gravatar.com/avatar/fd38f5219d460c0d348a9a1d78256e65?s=512",
-            "displayname" : "Licson",
-            "introduction" : "贊助商大大<br>擁有100Gbps家用網路"
+            "id": "@licson0729",
+            "avatar": "//www.gravatar.com/avatar/fd38f5219d460c0d348a9a1d78256e65?s=512",
+            "displayname": "Licson",
+            "introduction": "贊助商大大<br>擁有100Gbps家用網路"
         },
         {
-            "id" : "@sciuridae0603",
-            "avatar" : "//www.gravatar.com/avatar/60ce6b00bae88e0ff15c9480a9ce92f5?s=512",
-            "displayname" : "Sciuridae",
-            "introduction" : "網頁開發<br>走 osu! Warframe"
+            "id": "@sciuridae0603",
+            "avatar": "//www.gravatar.com/avatar/60ce6b00bae88e0ff15c9480a9ce92f5?s=512",
+            "displayname": "Sciuridae",
+            "introduction": "網頁開發<br>走 osu! Warframe"
         }
-    ]}
+    ]
+}
