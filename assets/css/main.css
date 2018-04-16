@@ -46,6 +46,10 @@ body {
     color: #7289DA;
 }
 
+.discordIcon:hover {
+    color: #333;
+}
+
 .contributor {
     width: 15em;
     margin: 2em;
@@ -90,6 +94,16 @@ body {
     font-size: 4em;
     color: white;
 }
+.subtitle {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 2em;
+    color: white;
+}
 
 .nextArrow {
     color: white;
@@ -104,6 +118,18 @@ body {
     position: absolute;
     top: 45%;
     right: 10%;
+}
+
+.centerBox_column {
+    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
 }
 
 .centerBox {
@@ -292,7 +318,10 @@ a:active {
     }
 }
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
+.會出現的文字{
+    transition: 0.5s;
+    opacity: 0;
+}
+.會出現的文字:hover{
+    opacity: 1;
 }
