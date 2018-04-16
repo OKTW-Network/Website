@@ -119,7 +119,7 @@ body {
 }
 
 .backgroundBlur {
-    position: absolute;
+    position: fixed;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -290,4 +290,9 @@ a:active {
         -webkit-transform: scale3D(0, 0, 1);
         transform: scale3D(0, 0, 1);
     }
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
