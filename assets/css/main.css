@@ -5,8 +5,9 @@
 
 body {
     display: flex;
-    -moz-user-select: none;
-    -webkit-user-select: none;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
 }
 
 .fp-slidesNav {
@@ -45,7 +46,7 @@ body {
     color: #7289DA;
 }
 
-.discordIcon:hover {
+.githubIcon:hover {
     color: #333;
 }
 
