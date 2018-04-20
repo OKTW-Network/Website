@@ -102,6 +102,8 @@ $(document).ready(function () {
 
 });
 
+plugin_desc = true;
+
 function init() {
 
     $('#fullpage').fullpage({
@@ -115,7 +117,33 @@ function init() {
         loopBottom: true,
         lazyLoading: true,
         easing: 'easeOutQuart',
-        easingcss3: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)'
+        easingcss3: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)',
+
+        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+            console.log(anchorLink , index , slideAnchor , slideIndex);
+            if (anchorLink == 3 , index == 1 ,slideAnchor == 1){
+                if(plugin_desc){plugin_desc = false;}else{return}
+                console.log("show plugin server desc");
+                plugin_desc1 = document.getElementsByName("plugin-desc-1");
+                var time = 1000;
+                for (let i = 0; i < plugin_desc1.length; i++) {
+                    setTimeout(function(){plugin_desc1[i].style.opacity = 1;},time);
+                    time = time + 1000;
+                }
+
+                setTimeout(function(){$.fn.fullpage.moveSlideRight();},time+800);
+                time = time + 1600;
+                var plugin_desc2 = document.getElementsByName("plugin-desc-2");
+
+                for (let i = 0; i < plugin_desc2.length; i++) {
+                    setTimeout(function(){plugin_desc2[i].style.opacity = 1;},time);
+                    time = time + 1000;
+                }
+
+            }
+        }
+
+
     });
 
     var tmp = document.getElementsByClassName("backgroundBlur")

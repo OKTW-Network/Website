@@ -325,3 +325,7 @@ a:active {
 .會出現的文字:hover{
     opacity: 1;
 }
+.hide{
+    transition: 0.5s;
+    opacity: 0;
+}
