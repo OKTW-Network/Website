@@ -103,7 +103,7 @@ $(document).ready(function () {
 });
 
 plugin_desc = true;
-
+oktw_desc = true;
 function init() {
 
     $('#fullpage').fullpage({
@@ -121,29 +121,37 @@ function init() {
 
         afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
             console.log(anchorLink , index , slideAnchor , slideIndex);
-            if (anchorLink == 3 , index == 1 ,slideAnchor == 1){
+            if (index == 3 && slideAnchor == 1 && slideIndex == 1){
                 if(plugin_desc){plugin_desc = false;}else{return}
                 console.log("show plugin server desc");
-                plugin_desc1 = document.getElementsByName("plugin-desc-1");
-                var time = 1000;
-                for (let i = 0; i < plugin_desc1.length; i++) {
-                    setTimeout(function(){plugin_desc1[i].style.opacity = 1;},time);
-                    time = time + 1000;
+                plugin_desc = document.getElementsByName("plugin-desc");
+                var time = 200;
+                for (let i = 0; i < plugin_desc.length; i++) {
+                    setTimeout(function(){
+                        plugin_desc[i].style.opacity = 1;
+                        if(plugin_desc[i].className == "next-page"){
+                            $.fn.fullpage.moveSlideRight();
+                        }
+                    },time);
+                    time = time + 1200;
                 }
-
-                setTimeout(function(){$.fn.fullpage.moveSlideRight();},time+800);
-                time = time + 1600;
-                var plugin_desc2 = document.getElementsByName("plugin-desc-2");
-
-                for (let i = 0; i < plugin_desc2.length; i++) {
-                    setTimeout(function(){plugin_desc2[i].style.opacity = 1;},time);
-                    time = time + 1000;
+            }
+            if (index == 2 && slideAnchor == 1 && slideIndex == 1){
+                if(oktw_desc){oktw_desc = false;}else{return}
+                console.log("show oktw desc");
+                oktw_desc = document.getElementsByName("oktw-desc");
+                var time = 200;
+                for (let i = 0; i < oktw_desc.length; i++) {
+                    setTimeout(function(){
+                        oktw_desc[i].style.opacity = 1;
+                        if(oktw_desc[i].className == "next-page"){
+                            $.fn.fullpage.moveSlideRight();
+                        }
+                    },time);
+                    time = time + 1200;
                 }
-
             }
         }
-
-
     });
 
     var tmp = document.getElementsByClassName("backgroundBlur")
@@ -171,11 +179,11 @@ function init() {
     )
 
     $('.nextArrow').click(function () {
-        $.fn.fullpage.moveSlideLeft();
+        $.fn.fullpage.moveSlideRight();
     })
 
     $('.prevArrow').click(function () {
-        $.fn.fullpage.moveSlideRight();
+        $.fn.fullpage.moveSlideLeft();
     })
 
     if (isMobile()) {

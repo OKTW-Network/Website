@@ -106,18 +106,34 @@ body {
 }
 
 .nextArrow {
+    z-index: 2;
+    position: absolute;
+    top: 45%;
+    right: 10%;
+}
+
+.floatArrow{
+    animation: floatArrow 1s infinite;
+}
+
+@keyframes floatArrow{
+    0%{
+        top:45%;
+    }
+    50%{
+        top:46%;
+    }
+    100%{
+        top:45%;
+    }
+}
+
+.prevArrow {
     color: white;
     z-index: 2;
     position: absolute;
     top: 45%;
     left: 10%;
-}
-
-.prevArrow {
-    z-index: 2;
-    position: absolute;
-    top: 45%;
-    right: 10%;
 }
 
 .centerBox_column {
