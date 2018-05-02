@@ -94,6 +94,7 @@ body {
     font-size: 4em;
     color: white;
 }
+
 .subtitle {
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -112,19 +113,19 @@ body {
     right: 10%;
 }
 
-.floatArrow{
+.floatArrow {
     animation: floatArrow 1s infinite;
 }
 
-@keyframes floatArrow{
-    0%{
-        top:45%;
+@keyframes floatArrow {
+    0% {
+        top: 45%;
     }
-    50%{
-        top:46%;
+    50% {
+        top: 46%;
     }
-    100%{
-        top:45%;
+    100% {
+        top: 45%;
     }
 }
 
@@ -334,14 +335,16 @@ a:active {
     }
 }
 
-.會出現的文字{
+.會出現的文字 {
     transition: 0.5s;
     opacity: 0;
 }
-.會出現的文字:hover{
+
+.會出現的文字:hover {
     opacity: 1;
 }
-.hide{
+
+.hide {
     transition: 0.5s;
     opacity: 0;
 }

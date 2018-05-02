@@ -60,7 +60,6 @@ function generateContributors(json) {
 }
 
 function generateContributorCard(data) {
-
     var contributor = document.createElement("div");
     contributor.className = "contributor"
 
@@ -92,20 +91,15 @@ function generateContributorCard(data) {
     contributor.innerHTML += "<br/>";
     contributor.appendChild(introduction);
     return (contributor)
-
 }
 
-
 $(document).ready(function () {
-
     getContributors();
-
 });
 
 plugin_desc = true;
 oktw_desc = true;
 function init() {
-
     $('#fullpage').fullpage({
         fitToSection: false,
         autoScrolling: false,
@@ -119,35 +113,35 @@ function init() {
         easing: 'easeOutQuart',
         easingcss3: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)',
 
-        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-            console.log(anchorLink , index , slideAnchor , slideIndex);
-            if (index == 3 && slideAnchor == 1 && slideIndex == 1){
-                if(plugin_desc){plugin_desc = false;}else{return}
+        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+            console.log(anchorLink, index, slideAnchor, slideIndex);
+            if (index == 3 && slideAnchor == 1 && slideIndex == 1) {
+                if (plugin_desc) { plugin_desc = false; } else { return }
                 console.log("show plugin server desc");
                 plugin_desc = document.getElementsByName("plugin-desc");
                 var time = 200;
                 for (let i = 0; i < plugin_desc.length; i++) {
-                    setTimeout(function(){
+                    setTimeout(function () {
                         plugin_desc[i].style.opacity = 1;
-                        if(plugin_desc[i].className == "next-page"){
+                        if (plugin_desc[i].className == "next-page") {
                             $.fn.fullpage.moveSlideRight();
                         }
-                    },time);
+                    }, time);
                     time = time + 1200;
                 }
             }
-            if (index == 2 && slideAnchor == 1 && slideIndex == 1){
-                if(oktw_desc){oktw_desc = false;}else{return}
+            if (index == 2 && slideAnchor == 1 && slideIndex == 1) {
+                if (oktw_desc) { oktw_desc = false; } else { return }
                 console.log("show oktw desc");
                 oktw_desc = document.getElementsByName("oktw-desc");
                 var time = 200;
                 for (let i = 0; i < oktw_desc.length; i++) {
-                    setTimeout(function(){
+                    setTimeout(function () {
                         oktw_desc[i].style.opacity = 1;
-                        if(oktw_desc[i].className == "next-page"){
+                        if (oktw_desc[i].className == "next-page") {
                             $.fn.fullpage.moveSlideRight();
                         }
-                    },time);
+                    }, time);
                     time = time + 1200;
                 }
             }
@@ -210,9 +204,8 @@ function init() {
     }).each(function () {
         try {
             if (this.complete) $(this).load();
-        } catch (e) {};
+        } catch (e) { };
     });
-
 
     cheet('f r o g', function () {
         $("#frog").attr("poster", "https://media.giphy.com/media/pkYigxymEkV44/200_s.gif");
