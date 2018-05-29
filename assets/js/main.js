@@ -64,7 +64,7 @@ function generateContributorCard(data) {
     contributor.className = "contributor"
 
     const avatar = document.createElement("img");
-    avatar.className = "contributorAvatar";
+    avatar.className = "contributorAvatar text";
     if (data.avatar) {
         avatar.src = data.avatar;
     } else {
@@ -72,15 +72,15 @@ function generateContributorCard(data) {
     }
 
     const displayname = document.createElement("div");
-    displayname.className = "contributorDisplayname";
+    displayname.className = "contributorDisplayname text";
     displayname.innerHTML = data.displayname;
 
     const id = document.createElement("div");
-    id.className = "contributorID";
+    id.className = "contributorID text";
     id.innerHTML = data.id;
 
     const introduction = document.createElement("div");
-    introduction.className = "contributorIntroduction";
+    introduction.className = "contributorIntroduction text";
     introduction.innerHTML = data.introduction;
 
     contributor.appendChild(avatar);
@@ -176,13 +176,13 @@ function init() {
         $.fn.fullpage.moveSlideRight();
     })
 
-    $('.preletrow').click(function () {
+    $('.prevArrow').click(function () {
         $.fn.fullpage.moveSlideLeft();
     })
 
     if (isMobile()) {
         $('.nextArrow').hide();
-        $('.preletrow').hide();
+        $('.prevArrow').hide();
         $('#nextPageArrow').hide();
     }
 
