@@ -236,7 +236,7 @@ a:active {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: #8e85ee;
