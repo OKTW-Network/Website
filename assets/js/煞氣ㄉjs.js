@@ -56,11 +56,20 @@ function 變煞氣(){
         for (文字 in 文字們){
             文字們[文字].className = 文字們[文字].className + " rainbow";
         }
+        
+    $('.nextArrow').click(function () {
+        $.fn.fullpage.moveSlideRight();
+    })
+
+    $('.prevArrow').click(function () {
+        $.fn.fullpage.moveSlideLeft();
+    })
     },1200)
     setTimeout(function(){
         document.getElementById("full87").style.zIndex = "-100";
         document.getElementById("btn_87").style.zIndex = "-100";
     },2000)
+    
 }
 
 document.getElementById("btn_87").onclick = 變煞氣;
