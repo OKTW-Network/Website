@@ -56,11 +56,17 @@ function 變煞氣(){
         for (文字 in 文字們){
             文字們[文字].className = 文字們[文字].className + " rainbow";
         }
+        var 圖案們 = document.getElementsByTagName("svg");
+        for (圖案 in 圖案們){
+            if(typeof 圖案們[圖案].classList === "object"){
+                圖案們[圖案].classList.add("rainbow")
+            }
+        }
     init_animation();
     },1200)
     setTimeout(function(){
         document.getElementById("full87").style.zIndex = "-100";
-        document.getElementById("btn_87").style.zIndex = "-100";
+        document.getElementById("btn_87").style.display = "none";
     },2000)
     
 }

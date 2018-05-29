@@ -349,6 +349,7 @@ a:active {
     opacity: 0;
 }
 
+
 #btn_87 {
     position: fixed;
     cursor: pointer;
@@ -356,7 +357,7 @@ a:active {
     color:white;
     font-size: 4em;
     opacity: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 #btn_87:hover{

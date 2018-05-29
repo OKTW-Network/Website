@@ -79,6 +79,7 @@ function init_animation(){
     )
 
     $('.nextArrow').click(function () {
+        this.className = this.className.replace("floatArrow","");
         $.fn.fullpage.moveSlideRight();
     })
 
@@ -146,7 +147,6 @@ function init() {
             if (index == 3 && slideAnchor == 1 && slideIndex == 1) {
                 if (plugin_desc) { plugin_desc = false; } else { return }
                 console.log("show plugin server desc");
-                document.getElementById("plugin_next_arrow").className = document.getElementById("plugin_next_arrow").className.replace("floatArrow","");
                 plugin_desc = document.getElementsByName("plugin-desc");
                 let time = 200;
                 for (let i = 0; i < plugin_desc.length; i++) {
@@ -162,7 +162,6 @@ function init() {
             if (index == 2 && slideAnchor == 1 && slideIndex == 1) {
                 if (oktw_desc) { oktw_desc = false; } else { return }
                 console.log("show oktw desc");
-                document.getElementById("oktw_next_arrow").className = document.getElementById("oktw_next_arrow").className.replace("floatArrow","");
                 oktw_desc = document.getElementsByName("oktw-desc");
                 let time = 200;
                 for (let i = 0; i < oktw_desc.length; i++) {
