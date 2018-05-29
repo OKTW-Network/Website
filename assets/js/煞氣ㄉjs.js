@@ -59,6 +59,7 @@ function 變煞氣(){
     },1200)
     setTimeout(function(){
         document.getElementById("full87").style.zIndex = "-100";
+        document.getElementById("btn_87").style.zIndex = "-100";
     },2000)
 }
 
